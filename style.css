@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: #111;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  background-color: #000;
+  position: absolute;
+  /* display: none; */
+}
+
+.loader video {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.loader h1 {
+  font-family: "Freight Big Pro";
+  font-size: 7vw;
+  line-height: 5vw;
+  font-weight: 100;
+  color: #fff;
+  padding-top: 115px;
+  z-index: 1;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  /* z-index: 10; */
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 60px;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo svg {
+  cursor: pointer;
+  /* z-index: 99999; */
+}
+
+.nav-tabs ul {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.links {
+  /* color: #000; */
+  position: relative;
+}
+
+.links:after {
+  content: "";
+  position: absolute;
+  background-color: #111;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  top: 100%;
+  transition: all 0.3s;
+}
+.links:hover:after {
+  width: 90%;
+}
+
+#cross {
+  font-size: 55px;
+  font-weight: 100;
+  cursor: pointer;
+}
+#plus {
+  font-size: 55px;
+  font-weight: 100;
+  cursor: pointer;
+  display: none;
+}
+
+.hero-content {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: "Freight Big Pro";
+  font-size: 7vw;
+  line-height: 5vw;
+  font-weight: 100;
+  letter-spacing: -2px;
+}
+
+.contact {
+  /* background-color: red; */
+  padding: 10px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact a {
+  text-transform: uppercase;
+  color: #111;
+  font-family: sans-serif;
+}
+.contact i {
+  font-size: 2.6rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+/* page 2 starts here */
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s ease;
+}
+
+.page2-content {
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+}
+
+.page2-content h1 {
+  font-size: 6.6vw;
+  line-height: 5vw;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #fff;
+  z-index: 99;
+  font-family: "freight big pro";
+  text-transform: uppercase;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.page2-content h1:hover {
+  font-style: italic;
+  color: #111;
+  transition: all 0.6s ease-in-out;
+}
+
+/* page-3 starts here */
+
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #d1d1d1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 35px;
+}
+
+.project {
+  /* height: 87; */
+  width: 31.5%;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.project h1 {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 3.3vw;
+  font-weight: 200;
+  line-height: 2.5vw;
+  font-family: "freight big pro";
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.project img:hover {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.project:hover h1 {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.pro-2 {
+  height: 80vh;
+}
+
+.pro-4 {
+  height: 80vh;
+}
+.pro-5 {
+  height: 98vh;
+  position: relative;
+  top: -25vh;
+}
+.pro-6 {
+  height: 90vh;
+}
+.pro-7 {
+  height: 75vh;
+  position: relative;
+  top: -18vh;
+}
+.pro-8 {
+  height: 63vh;
+  position: relative;
+  top: -25vh;
+}
+.pro-9 {
+  height: 60vh;
+  position: relative;
+  top: -8vh;
+}
+
+
+
+
+/* footer starts here */
+.footer {
+  height: 20vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 45px;
+}
+
+.foot-2 {
+  display: flex;
+  gap: 50px;
+}
+
+.footer a {
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  position: relative;
+}
+.footer a::after {
+  content: "";
+  height: 1px;
+  background-color: #fff;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+}
+
+.footer a:hover:after {
+  width: 90%;
+  transition: all 0.3s ease-in;
+}
