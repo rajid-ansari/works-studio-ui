@@ -24,20 +24,16 @@ cross.addEventListener("click", (e) => {
   cross.style.display = "none";
   plus.style.display = "block";
 
-  gsap.to("#studies", {
+  gsap.to("#studies, #about", {
     x: "100%",
     opacity: 0,
     duration: 0.1,
   });
-  gsap.to("#about", {
-    x: "100%",
-    opacity: 0,
-    duration: 0.1,
-  });
+
   gsap.to("#projects", {
     x: "250px",
     duration: 0.5,
-    ease: "expo.easeIn",
+    ease: "expo.ease",
   });
 });
 
@@ -45,20 +41,14 @@ plus.addEventListener("click", (e) => {
   cross.style.display = "block";
   plus.style.display = "none";
 
-  gsap.to("#studies", {
+  gsap.to("#studies, #about", {
     x: "0%",
     opacity: 1,
     display: "block",
   });
-  gsap.to("#about", {
-    x: "0%",
-    opacity: 1,
-    display: "block",
-  });
+
   gsap.to("#projects", {
     x: "0%",
-    // opacity: 0,
-    // display: 'none'
   });
 });
 
